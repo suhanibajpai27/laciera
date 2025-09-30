@@ -121,9 +121,9 @@ export default function About() {
         {/* About Section */}
         <div className="-mt-20 pt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-0 m-0 w-full" style={{
         backgroundImage: `url(${bgImage})`,
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundRepeat:"repeat",
+        backgroundSize: "contain",        // let it use the image’s natural size
+        backgroundPosition: "top left",
+        backgroundRepeat: "repeat",    // repeat with no spacing
         
       }}>
           {/* Left Illustration */}
