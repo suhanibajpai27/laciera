@@ -7,14 +7,17 @@ import f3 from "../../assets/images/f3.png"
 import f3bg from "../../assets/images/f3bg.png"
 import about from "../../assets/images/about.png"
 import bgImage from "../../assets/images/aboutbg.png"
+import author from "../../assets/images/author.svg"
+import quotes from "../../assets/images/quotes.svg"
 
 export default function About() {
   return (
-    <section className="relative w-full py-20 bg-white">
-      <div className=" mx-auto px-6 lg:px-12">
-        
-        {/* Top Heading */}
-        <div className="text-center  mx-auto">
+    <section className="relative w-full py-20 bg-white m-0 p-0">
+      <div className=" mx-auto ">
+
+        <div className="px-6 lg:px-12">
+ {/* Top Heading */}
+ <div className="text-center  mx-auto">
           <p className="text-xs font-medium text-[16px] tracking-wide text-orange-1 uppercase">
             Make The Right Choice
           </p>
@@ -117,9 +120,12 @@ export default function About() {
 </div>
 
         </div>
+        </div>
+
+     
 
         {/* About Section */}
-        <div className="-mt-20 pt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-0 m-0 w-full" style={{
+        <div className="-mt-20 pt-40 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-0 m-0 w-full" style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "contain",        // let it use the image’s natural size
         backgroundPosition: "top left",
@@ -136,52 +142,52 @@ export default function About() {
           </div>
 
           {/* Right Content */}
-          <div className="text-center lg:text-left">
-            <p className="text-xs font-semibold tracking-wide text-orange-500 uppercase">
+          <div className="text-center lg:text-left w-full max-w-md lg:max-w-lg" >
+            <p className="text-[16px] font-medium tracking-wide text-orange-1 uppercase">
               About Us
             </p>
-            <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
-              Expertise In{" "}
-              <span className="text-green-600">Energy Transition</span>
+            <h2 className="mt-3 text-[40px] sm:text-3xl md:text-4xl font-bold text-primary-3 leading-snug">
+              Expertise In<br/>
+              <span className="text-primary-2">Energy Transition</span>
             </h2>
-            <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-lg mx-auto lg:mx-0">
+            <p className="mt-4 text-text-2 text-[16px] sm:text-base max-w-lg mx-auto lg:mx-0">
               As a specialized partner in energy management, we understand the
               challenges your organization faces. The energy market is changing
               rapidly, and new regulations require smart adjustments to your
               energy strategy.
             </p>
 
-            {/* Bullet List */}
-            <ul className="mt-6 space-y-3 text-gray-700 text-sm sm:text-base">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✔</span>
-                Customizable solutions for energy transition with data-driven insights.
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✔</span>
-                Affordable Energy Management System for homes and businesses.
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 font-bold">✔</span>
-                Reduce consumption, generate returns, and optimize comfort.
-              </li>
-            </ul>
-
-            {/* Buttons + Profile */}
-            <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-6">
-              <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition">
-                Explore More →
-              </button>
-
-              <div className="flex items-center gap-3">
+            {/* Founder words */}
+            <div className="flex items-center gap-4 mt-3">
                 <img
-                  src="https://via.placeholder.com/50"
+                  src={author}
                   alt="CEO"
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div className="text-left">
-                  <p className="font-semibold text-gray-900">Ronald Richards</p>
-                  <p className="text-gray-500 text-sm">CEO, Founder</p>
+                <img
+                  src={quotes}
+                 
+                />
+                  <p className="text-text-2 text-[12px] mt-1">Our mission is to accelerate the energy transition with a data-driven, affordable Energy Management System for homes to industry. Laciera unifies consumption, generation and storage; auto-optimizes; and enables optional energy trading.</p>
+                </div>
+              </div>
+<hr className="my-4 " style={{borderWidth: "1px" ,borderColor: "#E3E3E3"}} />
+            {/* Buttons + Profile */}
+            <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-6">
+              <button className="bg-primary-3 text-white px-6 py-3 rounded-sm font-medium hover:bg-gray-800 transition text-[16px]">
+                Explore More →
+              </button>
+
+              <div className="flex items-center gap-4">
+                <img
+                  src={author}
+                  alt="CEO"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div className="text-left">
+                  <p className="font-semibold text-text-1 text-[16px]">Ronald Richards</p>
+                  <p className="text-text-2 text-[14px]">CEO, Founder</p>
                 </div>
               </div>
             </div>
