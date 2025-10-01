@@ -83,7 +83,7 @@ const Contactus = () => {
             {/* Submit */}
             <button
               type="submit"
-              className="bg-[#1C8D73] text-white px-8 py-4 rounded-sm font-medium hover:bg-teal-700 transition flex items-center text-[16px]"
+              className="bg-primary-2 text-white px-8 py-4 rounded-sm font-medium hover:bg-teal-700 transition flex items-center text-[16px]"
             >
               Submit Here →
             </button>
