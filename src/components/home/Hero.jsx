@@ -20,19 +20,19 @@ export default function Hero() {
       <div className="absolute inset-0 bg-primary-1/90"></div>
 
       {/* Content Container */}
-      <div className="relative  w-[83%] ml-auto  m-0 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 py-10">
+      <div className="relative  w-full mx-auto  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 py-10  ">
         
         {/* Left Text Content */}
-        <div className="lg:w-full text-center lg:text-left text-white ">
+        <div className="lg:w-1/2 text-left lg:text-left text-white  px-6">
           <h1 className="text-[64px] sm:text-4xl md:text-5xl font-bold ">
             Your Smart Energy 
             Management System
           </h1>
-          <p className="mt-4  sm:text-base md:text-lg text-white/90 max-w-lg mx-auto lg:mx-0 text-[24px]">
+          <p className="mt-4   text-white/90 max-w-lg mx-auto lg:mx-0 text-[24px] text-left md:max-w-full">
             One platform for insight, optimization, and energy trading. Cut costs, increase returns, and maintain comfort while accelerating the energy transition.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+          <div className="mt-8 flex flex-wrap  lg:justify-start gap-4">
             <button className="bg-white text-text-1 px-6 py-3 rounded-sm font-semibold hover:bg-gray-200 transition text-[16px]">
               Signup Now &rarr;
             </button>
@@ -43,10 +43,10 @@ export default function Hero() {
         </div>
 
         {/* Right Video Section */}
-        <div className="lg:w-1/2 flex justify-center items-center p-0 m-0">
+        <div className="md:w-full lg:w-1/2 flex justify-center items-center p-0 m-0 ">
           {!isPlaying ? (
             <div
-              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden w-64 h-64 sm:w-80 sm:h-80 md:w-[480px] md:h-[320px] flex items-center justify-center shadow-xl"
+              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[480px]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
               onClick={() => setIsPlaying(true)}
             >
               <img
@@ -71,7 +71,7 @@ export default function Hero() {
               src={sampleVideo}
               controls
               autoPlay
-              className="w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] object-cover  rounded-tl-[200px] rounded-bl-[200px] shadow-xl"
+              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[480px]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
             />
           )}
         </div>
