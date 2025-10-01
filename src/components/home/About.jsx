@@ -12,7 +12,7 @@ import quotes from "../../assets/images/quotes.svg"
 
 export default function About() {
   return (
-    <section className="relative w-full py-20 bg-white m-0 p-0">
+    <section className="relative w-full pt-20 bg-white m-0 p-0">
       <div className=" mx-auto ">
 
         <div className="px-6 lg:px-12">
@@ -127,9 +127,8 @@ export default function About() {
         {/* About Section */}
         <div className="-mt-20 pt-40 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-0 m-0 w-full" style={{
         backgroundImage: `url(${bgImage})`,
-        backgroundSize: "contain",        // let it use the image’s natural size
-        backgroundPosition: "top left",
-        backgroundRepeat: "repeat",    // repeat with no spacing
+        backgroundSize: "cover",       
+       
         
       }}>
           {/* Left Illustration */}

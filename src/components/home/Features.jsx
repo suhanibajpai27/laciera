@@ -5,7 +5,7 @@ const features = ["Solar Panel", "Water Heating", "Financing", "Hydro Power"];
 
 export default function Features() {
   return (
-    <div className="w-full bg-white py-6">
+    <div className="w-full bg-white py-16">
       <div className="flex justify-center items-center space-x-4 ">
         {features.map((feature, index) => (
           <div key={index} className="flex items-center space-x-1">
