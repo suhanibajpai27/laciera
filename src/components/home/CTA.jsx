@@ -55,10 +55,10 @@ const CTA = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mt-16 align-center justify-center">
-          <button className="bg-white text-text-1 px-8 py-4 rounded-sm font-medium hover:bg-gray-100 transition inline-flex items-center text-[16px]">
+          <button className="bg-white text-text-1 px-8 py-4 rounded-sm font-medium hover:bg-gray-100 transition inline-flex items-center">
             Contact Us <span className="ml-2">→</span>
           </button>
-          <button className="bg-primary-3 text-white px-8 py-4 rounded-sm  font-medium hover:bg-gray-800 transition text-[16px]">
+          <button className="bg-primary-3 text-white px-8 py-4 rounded-sm font-medium hover:bg-gray-800 transition">
             Download Brochure
           </button>
         </div>
