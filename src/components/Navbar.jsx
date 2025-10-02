@@ -20,8 +20,8 @@ export default function Navbar() {
     <>
     <header className="w-full overflow-auto ">
       {/* Top Bar */}
-      <div className="bg-[#0A778D]/10 text-sm hidden md:block">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2">
+      <div className="bg-[#0A778D]/10 text-sm hidden md:block px-4 lg:px-4  xl:px-18  2xl:px-20">
+        <div className=" mx-auto flex flex-wrap items-center justify-between  py-2 ">
           {/* Left */}
           <div className="flex flex-wrap items-center gap-6 text-gray-700">
             <div className="flex items-center gap-2">
@@ -54,8 +54,8 @@ export default function Navbar() {
     
     </header>
      {/* Navbar */}
-     <nav className="bg-white shadow-sm sticky top-0 z-50">
-     <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+     <nav className="bg-white shadow-sm sticky top-0 z-50 px-4 lg:px-4  xl:px-18  2xl:px-20 ">
+     <div className=" mx-auto flex items-center justify-between  py-3">
        <div className="flex gap-[44px]">
 
       

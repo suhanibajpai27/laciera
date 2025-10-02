@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative  w-full mx-auto  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 py-10  ">
         
         {/* Left Text Content */}
-        <div className=" text-left lg:text-left text-white px-4 lg:px-4  xl:px-12  2xl:px-50 lg:w-2/3">
+        <div className=" text-left lg:text-left text-white px-4 lg:px-4  xl:px-18  2xl:px-20 lg:w-2/3">
           <h1 className="text-[64px] sm:text-4xl md:text-5xl font-bold ">
             Your Smart Energy 
             Management System
