@@ -7,7 +7,7 @@ import fb from "../assets/icons/fb.svg";
 import x from "../assets/icons/x.svg";
 import li from "../assets/icons/li.svg";
 import yt from "../assets/icons/yt.svg";
-import logo from "../assets/icons/logo.svg";
+import logo from "../assets/icons/logo.png";
 import dd from "../assets/icons/dd.svg";
 import call from "../assets/icons/call.svg";
 import arrow from "../assets/icons/arrow.svg";
@@ -57,11 +57,11 @@ export default function Navbar() {
           {/* Logo */}
           <div >
           <Link to="/" className="flex items-center gap-3">
-            <img
+           <span className="max-w-[47px] max-h-[60px]"> <img
               src={logo} 
               alt="Laciera Logo"
-              className="h-[60] w-[47]"
-            />
+              className="w-[100%] h-[100%]"
+            /></span>
             <span className="text-[24px] font-semibold text-green-600">LACIERA</span>
             </Link>
           </div>
