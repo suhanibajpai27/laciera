@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 import Banner from '../components/Banner'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Approach from "../components/about/Approach"
+import Contactus from "../components/home/Contactus"
 
-function About() {
+function Contact() {
   return (
    <>
    <Navbar />
    <Banner
-        heading="About"
+        heading="Contact"
         description="As a specialized partner in energy management, we understand the challenges your organization faces. The energy market is changing rapidly, and new regulations require smart adjustments to your energy strategy."
       />
-      <Approach/>
+     <Contactus/>
       <Footer />
    </>
   )
 }
 
-export default About
+export default Contact
