@@ -24,8 +24,10 @@ export default function Navbar() {
           {/* Left */}
           <div className="flex flex-wrap items-center gap-6 text-gray-700">
             <div className="flex items-center gap-2">
+             
               <span className="text-green-600"><img src={email} size={15} /></span>
               <span className="text-[15px]">info@laciera.energy</span> 
+          
             </div>
             <div className="flex items-center gap-2 ">
               <span className="text-green-600"><img src={alarm} size={15} /></span>
@@ -53,13 +55,15 @@ export default function Navbar() {
 
          
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div >
+          <Link to="/" className="flex items-center gap-3">
             <img
               src={logo} 
               alt="Laciera Logo"
               className="h-[60] w-[47]"
             />
             <span className="text-[24px] font-semibold text-green-600">LACIERA</span>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
