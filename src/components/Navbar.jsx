@@ -66,12 +66,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 ">
             <Link to="/" className="text-green-600 font-semibold text-[16px]">Home</Link>
             <div className="relative group">
-              <button className="flex items-center gap-1 hover:text-green-600 text-[16px] font-semibold">
+              <Link 
+  to="/solutions" className="flex items-center gap-1 hover:text-green-600 text-[16px] font-semibold" >
                 Solutions
                 <span><img src={dd} size={8} /></span>
-              </button>
+              </Link>
               {/* Dropdown */}
-              <div className="absolute hidden group-hover:block bg-white shadow rounded mt-2 p-2 ">
+              <div className="absolute hidden group-hover:block bg-white shadow rounded mt-2 p-2 z-20 ">
                 <Link to="/solution1" className="block px-4 py-2 hover:bg-gray-100 ">Solution</Link>
                 <Link to="/solution2" className="block px-4 py-2 hover:bg-gray-100 ">Solution </Link>
               </div>
