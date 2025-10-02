@@ -14,7 +14,7 @@ export default function Features() {
               <span className="text-orange-1  text-4xl font-bold sm-text-xl">✱</span>
             )}
             {/* Feature text */}
-            <span className=" font-bold text-text-1  sm:text-xl">
+            <span className=" font-bold text-text-1  sm:text-xl md:text-5xl">
               {feature}
             </span>
           </div>
