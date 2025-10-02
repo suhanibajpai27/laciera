@@ -11,10 +11,10 @@ export default function Features() {
           <div key={index} className="flex items-center space-x-1">
             {/* Star separator (hide before first item) */}
             {index !== 0 && (
-              <span className="text-orange-1  text-4xl font-bold ">✱</span>
+              <span className="text-orange-1  text-4xl font-bold sm-text-xl">✱</span>
             )}
             {/* Feature text */}
-            <span className="text-5xl font-bold text-text-1 ">
+            <span className=" font-bold text-text-1  sm:text-xl">
               {feature}
             </span>
           </div>

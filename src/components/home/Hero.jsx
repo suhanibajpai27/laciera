@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full min-h-[80vh] h-[90%] flex items-center"
+      className="relative w-full min-h-[80vh] h-[90%] flex items-center overflow-hidden"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -20,10 +20,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-primary-1/90"></div>
 
       {/* Content Container */}
-      <div className="relative  w-full mx-auto  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 py-10  ">
+      <div className="relative  w-full mx-auto  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 py-10  ">
         
         {/* Left Text Content */}
-        <div className="lg:w-1/2 text-left lg:text-left text-white  px-6">
+        <div className=" text-left lg:text-left text-white px-4 lg:px-4  xl:px-12  2xl:px-50 lg:w-2/3">
           <h1 className="text-[64px] sm:text-4xl md:text-5xl font-bold ">
             Your Smart Energy 
             Management System
@@ -43,11 +43,12 @@ export default function Hero() {
         </div>
 
         {/* Right Video Section */}
-        <div className="md:w-full lg:w-1/2 flex justify-center items-center p-0 m-0 ">
+        <div className="md:w-full lg:w-1/3 flex justify-center items-center p-0 m-0 ">
           {!isPlaying ? (
             <div
-              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[480px]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
+              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[100%]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
               onClick={() => setIsPlaying(true)}
+              
             >
               <img
                 src={placeholderImage}

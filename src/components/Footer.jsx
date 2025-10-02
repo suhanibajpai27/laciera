@@ -106,7 +106,7 @@ export default function Footer() {
       {/* Bottom Section */}
     
 
-      <div className="container mx-auto px-6 py-4 lg:px-20 flex flex-col md:flex-row justify-between items-center text-sm text-gray-200 bg-[#E6F1F4] w-full text-text-1" >
+      <div className="container min-w-[100vw] px-0 w-full py-4 lg:px-20 flex flex-col md:flex-row justify-between items-center text-sm text-gray-200 bg-[#E6F1F4] w-full text-text-1" >
           <p>© All Copyright 2024 by <span className="font-semibold">ReEnergy</span></p>
           <div className="flex space-x-4 mt-2 md:mt-0">
             <a href="#" className="hover:underline">Terms & Condition</a>

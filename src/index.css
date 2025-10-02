@@ -5,7 +5,7 @@
   --font-kumbh: "Kumbh Sans", sans-serif;
 
   --color-primary-1: #009382;
-  --color-primary-2: #4AAB3D;
+  --color-primary-2: #1C8D73;
   --color-primary-3: #0E0E0D;
   --color-secondary:#006D68;
   --color-bg:#00A098;
@@ -23,6 +23,6 @@ html, body, #root {
   padding: 0 !important;
   max-width: 100% !important;
  
-  overflow-x: hidden; 
+ 
   
 }
