@@ -99,7 +99,7 @@ to="/solutions" className="flex items-center gap-1 hover:text-primay-2 link-curr
          </div>
          <Link
            to="/quote"
-           className="bg-primary-2 text-white px-6 py-4 rounded hover:bg-green-700 text-[16px] font-semibold flex items-center gap-2"
+           className="bg-primary-2 text-white px-6 py-4 rounded hover:bg-primary-1 text-[16px] font-semibold flex items-center gap-2"
          >
            Get A Quote <span><img src={arrow} /></span>
          </Link>
