@@ -1,5 +1,5 @@
 import React from "react";
-
+import {ChevronRight } from "lucide-react"
 import fb from "../assets/icons/fbw.svg";
 import x from "../assets/icons/xw.svg";
 import li from "../assets/icons/liw.svg";
@@ -14,7 +14,7 @@ export default function Footer() {
     <footer>
     <div className="bg-bg text-white px-6 lg:px-20">
       {/* Top contact section */}
-      <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left   ">
+      <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 text-center md:text-left   ">
         {/* Phone */}
         <div className="flex flex-row gap-4 items-center lg:items-start mx-auto lg:m-0">
          
@@ -59,10 +59,10 @@ export default function Footer() {
       <div className="border-t border-white/30"></div>
 
       {/* Middle Section */}
-      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-24 text-center md:text-left">
+      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 lg:gap-24 text-center md:text-left sm:gap-4">
         {/* Logo + Description */}
         <div>
-          <div className="flex items-center justify-center lg:justify-start mb-4">
+          <div className="flex items-center justify-center lg:justify-start mb-4 sm:mb-1">
             <img
               src={logo}
               alt="Laciera Logo"
@@ -84,24 +84,24 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="font-semibold mb-4  ">Quick Links</h3>
+          <h3 className="font-semibold mb-4  sm:mb-1">Quick Links</h3>
           
           <ul className="space-y-2 text-sm text-white/80">
-            <li><a href="#" className="hover:underline ">About</a></li>
-            <li><a href="#" className="hover:underline">Our Services</a></li>
-            <li><a href="#" className="hover:underline">Contact Us</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />About</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />Our Services</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />Contact Us</a></li>
           </ul>
         </div>
 
         {/* Services */}
         <div>
-          <h3 className="font-semibold mb-4">Services</h3>
+          <h3 className="font-semibold mb-4 sm:mb-1">Services</h3>
           <ul className="space-y-2 text-sm text-white/80">
-            <li><a href="#" className="hover:underline">Consultancy</a></li>
-            <li><a href="#" className="hover:underline">Solar System</a></li>
-            <li><a href="#" className="hover:underline">Solar Panel</a></li>
-            <li><a href="#" className="hover:underline">Style Guide</a></li>
-            <li><a href="#" className="hover:underline">License</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />Consultancy</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />Solar System</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />Solar Panel</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center md:justify-start"><ChevronRight size={14} />Style Guide</a></li>
+            <li><a href="#" className="hover:underline flex items-center justify-center  md:justify-start"><ChevronRight size={14} />License</a></li>
           </ul>
         </div>
       </div>
