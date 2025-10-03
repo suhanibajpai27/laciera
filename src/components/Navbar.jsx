@@ -20,7 +20,7 @@ export default function Navbar() {
     <>
     <header className="w-full overflow-auto ">
       {/* Top Bar */}
-      <div className="bg-[#0A778D]/10 text-sm hidden md:block px-4 lg:px-4  xl:px-18  2xl:px-20">
+      <div className="bg-[#0A778D]/10 text-sm hidden lg:block px-4 lg:px-4  xl:px-18  2xl:px-20">
         <div className=" mx-auto flex flex-wrap items-center justify-between  py-2 ">
           {/* Left */}
           <div className="flex flex-wrap items-center gap-6 text-gray-700">
@@ -72,7 +72,7 @@ export default function Navbar() {
        </div>
 
        {/* Desktop Menu */}
-       <div className="hidden md:flex items-center gap-8 text-text-1  ">
+       <div className="hidden lg:flex items-center gap-8 text-text-1  ">
          <Link to="/" className="text-text-1 hover:text-primary-2  font-semibold text-[16px] link-current">Home</Link>
          <div className="relative group">
            <Link 
@@ -92,7 +92,7 @@ to="/solutions" className="flex items-center gap-1 hover:text-primay-2 link-curr
        </div>
        </div>
        {/* Right Side (Desktop) */}
-       <div className="hidden md:flex items-center gap-6">
+       <div className="hidden lg:flex items-center gap-6">
          <div className="flex items-center gap-2 text-gray-700">
            <span><img src={call} size={15} /></span>
            <span className="font-semibold text-[16px]">+208-666-0112</span>
@@ -107,7 +107,7 @@ to="/solutions" className="flex items-center gap-1 hover:text-primay-2 link-curr
 
        {/* Mobile Menu Button */}
        <button
-         className="md:hidden text-gray-700"
+         className="lg:hidden text-text-1"
          onClick={() => setIsOpen(!isOpen)}
        >
          {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -116,7 +116,7 @@ to="/solutions" className="flex items-center gap-1 hover:text-primay-2 link-curr
 
      {/* Mobile Menu (Dropdown from top) */}
      {isOpen && (
-       <div className="md:hidden bg-white px-4 pb-4 space-y-2 fixed top-18 w-full">
+       <div className="lg:hidden bg-white px-4 pb-4 space-y-2 fixed top-18 w-full">
          <Link to="/" className="block  text-text-1 hover:text-primary-2  font-semibold  link-current">Home</Link>
          <Link to="/solutions" className="block text-text-1 hover:text-primary-2  font-semibold  link-current">Solutions</Link>
          <Link to="/products" className="block text-text-1 hover:text-primary-2  font-semibold  link-current">Products</Link>

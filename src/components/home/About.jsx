@@ -17,17 +17,17 @@ export default function About() {
 
         <div className="px-6 lg:px-12">
  {/* Top Heading */}
- <div className="text-center  mx-auto">
-          <p className="text-xs font-medium text-[16px] tracking-wide text-orange-1 uppercase">
+ <div className="text-center  mx-auto ">
+          <p className=" font-medium text-[14px] md:text-[14px] lg:text-[16px] tracking-wide text-orange-1 uppercase">
             Make The Right Choice
           </p>
-          <h2 className="mt-3 text-[40px] sm:text-3xl md:text-4xl font-bold text-text-1">
+          <h2 className="mt-3 text-[24px] md:text-[32px] lg:text-[40px] leading-tight font-bold text-text-1">
             Navigate The Energy Transition With Confidence
           </h2>
         </div>
 
         {/* Feature Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
           <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start text-left hover:shadow-xl transition overflow-hidden">
   {/* Background shape in top-right */}
@@ -47,12 +47,12 @@ export default function About() {
   />
 
   {/* Title */}
-  <h3 className="text-[20px] font-bold text-text-1 relative z-10">
+  <h3 className="text-[16px] md:text-[16px] lg:text-[20px] font-bold text-text-1 relative z-10">
     Sustainable Generation
   </h3>
 
   {/* Text */}
-  <p className="mt-2 text-[16px] text-text-2 relative z-10">
+  <p className="mt-2 text-[14px] lg:text-[16px] text-text-2 relative z-10">
     Implementation of solar panels and other renewable energy sources,
     including subsidy applications and optimization for your specific
     situation.
@@ -79,12 +79,12 @@ export default function About() {
   />
 
   {/* Title */}
-  <h3 className="text-[20px] font-bold text-text-1 relative z-10">
+  <h3 className="text-[16px] md:text-[16px] lg:text-[20px] font-bold text-text-1 relative z-10">
   Energy Storage
   </h3>
 
   {/* Text */}
-  <p className="mt-2 text-[16px] text-text-2 relative z-10">
+  <p className="mt-2 text-[14px] lg:text-[16px] text-text-2 relative z-10">
   Installation of storage systems to maximize self-consumption, flatten peaks, and reduce energy costs.
   </p>
 </div>
@@ -109,12 +109,12 @@ export default function About() {
   />
 
   {/* Title */}
-  <h3 className="text-[20px] font-bold text-text-1 relative z-10">
+  <h3 className="text-[16px] md:text-[16px] lg:text-[20px] font-bold text-text-1 relative z-10">
   Energy Trading
   </h3>
 
   {/* Text */}
-  <p className="mt-2 text-[16px] text-text-2 relative z-10">
+  <p className="mt-2 text-[14px] lg:text-[16px] text-text-2 relative z-10">
   Advanced systems for dynamic energy management and trading on energy markets for large consumers.
   </p>
 </div>
@@ -125,31 +125,31 @@ export default function About() {
      
 
         {/* About Section */}
-        <div className="-mt-20 pt-40 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-0 m-0 w-full" style={{
+        <div className="-mt-20 pt-40 pb-20 grid grid-cols-1   md:grid-cols-2 lg:grid-cols-2 gap-12 items-center px-6 md:px-0 md:mx-0  lg:px-0 lg:mx-0 w-full " style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",       
        
         
       }}>
           {/* Left Illustration */}
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <img
               src={about}
               alt="About Illustration"
-              className="w-full max-w-md lg:max-w-lg"
+              className="w-full sm:max-w-full sm:w-[100%] max-w-md lg:max-w-lg"
             />
           </div>
 
           {/* Right Content */}
-          <div className="text-center lg:text-left w-full max-w-md lg:max-w-lg" >
-            <p className="text-[16px] font-medium tracking-wide text-orange-1 uppercase">
+          <div className="text-left md:text-left lg:text-left w-full sm:max-w-full md:max-w-md lg:max-w-lg sm:px-6" >
+            <p className="text-[14px] lg:text-[16px] font-medium tracking-wide text-orange-1 uppercase">
               About Us
             </p>
-            <h2 className="mt-3 text-[40px] sm:text-3xl md:text-4xl font-bold text-primary-3 leading-snug">
+            <h2 className="mt-3 text-[24px] md:text-[32px] lg:text-[40px] font-bold text-primary-3 leading-tight">
               Expertise In<br/>
               <span className="text-primary-2">Energy Transition</span>
             </h2>
-            <p className="mt-4 text-text-2 text-[16px] sm:text-base max-w-lg mx-auto lg:mx-0">
+            <p className="mt-4 text-text-2 text-[14px] lg:text-[16px]  mx-auto lg:mx-0">
               As a specialized partner in energy management, we understand the
               challenges your organization faces. The energy market is changing
               rapidly, and new regulations require smart adjustments to your
@@ -168,13 +168,13 @@ export default function About() {
                   src={quotes}
                  
                 />
-                  <p className="text-text-2 text-[12px] mt-1">Our mission is to accelerate the energy transition with a data-driven, affordable Energy Management System for homes to industry. Laciera unifies consumption, generation and storage; auto-optimizes; and enables optional energy trading.</p>
+                  <p className="text-text-2 text-[10px] lg:text-[12px] mt-1">Our mission is to accelerate the energy transition with a data-driven, affordable Energy Management System for homes to industry. Laciera unifies consumption, generation and storage; auto-optimizes; and enables optional energy trading.</p>
                 </div>
               </div>
 <hr className="my-4 " style={{borderWidth: "1px" ,borderColor: "#E3E3E3"}} />
             {/* Buttons + Profile */}
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-6">
-              <button className="bg-primary-3 text-white px-6 py-3 rounded-sm font-medium hover:bg-gray-800 transition text-[16px]">
+              <button className="bg-primary-3 text-white px-6 py-3 rounded-sm font-medium hover:bg-gray-800 transition text-[14px] lg:text-[16px]">
                 Explore More →
               </button>
 
@@ -185,8 +185,8 @@ export default function About() {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div className="text-left">
-                  <p className="font-semibold text-text-1 text-[16px]">Ronald Richards</p>
-                  <p className="text-text-2 text-[14px]">CEO, Founder</p>
+                  <p className="font-semibold text-text-1 text-[14px] lg:text-[16px]">Ronald Richards</p>
+                  <p className="text-text-2 text-[12px]  lg:text-[14px]">CEO, Founder</p>
                 </div>
               </div>
             </div>

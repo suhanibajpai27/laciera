@@ -23,30 +23,30 @@ export default function Hero() {
       <div className="relative  w-full mx-auto  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 py-10  ">
         
         {/* Left Text Content */}
-        <div className=" text-left lg:text-left text-white px-4 lg:px-4  xl:px-18  2xl:px-20 lg:w-2/3">
-          <h1 className="text-[64px] sm:text-4xl md:text-5xl font-bold ">
+        <div className=" text-left lg:text-left text-white px-4  lg:px-4  xl:px-18  2xl:px-20 lg:w-2/3 md:px-8">
+          <h1 className="text-[36px] md:text-[48px] lg:text-[64px] font-bold leading-tight ">
             Your Smart Energy 
             Management System
           </h1>
-          <p className="mt-4   text-white/90 max-w-lg mx-auto lg:mx-0 text-[24px] text-left md:max-w-full">
+          <p className="mt-4   text-white/90  mx-auto lg:mx-0 text-[16px] md:text-[20px] lg:text-[24px] text-left md:max-w-full">
             One platform for insight, optimization, and energy trading. Cut costs, increase returns, and maintain comfort while accelerating the energy transition.
           </p>
 
           <div className="mt-8 flex flex-wrap  lg:justify-start gap-4">
-            <button className="bg-white text-text-1 px-6 py-3 rounded-sm font-semibold hover:bg-gray-200 transition text-[16px]">
+            <button className="bg-white text-text-1 px-6 py-3 rounded-sm font-semibold hover:bg-gray-200 transition md:text-[14px] lg:text-[16px]">
               Signup Now &rarr;
             </button>
-            <button className="bg-primary-3 text-white px-6 py-3 rounded-sm font-medium hover:bg-gray-900 transition text-[16px]">
+            <button className="bg-primary-3 text-white px-6 py-3 rounded-sm font-medium hover:bg-gray-900 transition sm:text-[14px] md:text-[14px] lg:text-[16px]">
               Request Demo
             </button>
           </div>
         </div>
 
         {/* Right Video Section */}
-        <div className="md:w-full lg:w-1/3 flex justify-center items-center p-0 m-0 ">
+        <div className="md:w-full lg:w-1/3 flex justify-center items-center  p-0 m-0  ">
           {!isPlaying ? (
             <div
-              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[100%]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
+              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-[80%] sm:h-[90%]   lg:w-[100%]  md:w-[95%] md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
               onClick={() => setIsPlaying(true)}
               
             >
@@ -72,7 +72,7 @@ export default function Hero() {
               src={sampleVideo}
               controls
               autoPlay
-              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[480px]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
+              className="relative cursor-pointer rounded-tl-[200px] rounded-bl-[200px] overflow-hidden  sm:w-80 sm:h-80  lg:w-[480px] md:w-[95%]  md:h-[320px] flex items-center justify-center shadow-xl ml-auto"
             />
           )}
         </div>

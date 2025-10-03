@@ -46,8 +46,8 @@ const Offerings = () => {
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "contain", backgroundPosition: "center" }}
     >
       <div className="text-center mb-12">
-        <p className="text-[16px]  font-medium uppercase tracking-wider">Our Offering</p>
-        <h2 className="text-[40px] font-bold md:text-4xl  mt-2">
+        <p className="text-[14px] lg:text-[16px] font-medium uppercase tracking-wider">Our Offering</p>
+        <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold  leading-tight mt-2">
           Complete Solutions For <br /> Energy Transition
         </h2>
       </div>
@@ -61,8 +61,8 @@ const Offerings = () => {
             <div className="flex justify-center items-center bg-white rounded-full w-20 h-20 mx-auto mb-4 -mt-15">
               <img src={item.image} alt={item.title} className="w-20 h-20" />
             </div>
-            <h3 className="font-medium  mb-2 text-[20px] mt-2">{item.title}</h3>
-            <p className="text-[16px] text-white font-light">{item.description}</p>
+            <h3 className="font-medium  mb-2 text-[16px] lg:text-[20px] mt-2">{item.title}</h3>
+            <p className="text-[14px] lg:text-[16px] text-white font-light">{item.description}</p>
           </div>
         ))}
       </div>
