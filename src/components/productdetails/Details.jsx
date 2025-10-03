@@ -17,12 +17,12 @@ const Details = ({ product }) => {
           className="w-full object-contain "
         />
 
-        <div className="absolute -bottom-15 right-4 bg-white shadow-sm  p-4 w-64 text-left">
-          <h3 className="text-text-1 font-semibold mb-3 text-[22opx]">Project Info:</h3>
+        <div className="absolute -bottom-5 lg:-bottom-15 right-4 bg-white shadow-sm  p-4 w-64 text-left">
+          <h3 className="text-text-1 font-semibold mb-3 text-[16px] md:text-[20px] lg:text-[22px]">Project Info:</h3>
           {product.projectInfo.map((info, idx) => (
             <div
               key={idx}
-              className="flex  justify-between text-[16px] text-text-1  mb-2 "
+              className="flex  justify-between text-[14px] lg:text-[16px] text-text-1  mb-2 "
             >
               <span>{info.label}</span>
               <span className="font-semibold">{info.value}</span>
@@ -34,40 +34,40 @@ const Details = ({ product }) => {
       </div>
 
       {/* Product Information */}
-      <div className="w-full text-left mt-8 px-6">
-        <h3 className="text-[30px] font-semibold text-text-1 mt-1 mb-2">
+      <div className="w-full text-left mt-8 ">
+        <h3 className="text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-semibold text-text-1 mt-1 mb-2">
           Product Information
         </h3>
-        <p className="text-text-2 text-[16px] leading-relaxed">{product.description}</p>
+        <p className="text-text-2 text-[14px] lg:text-[16px] leading-relaxed">{product.description}</p>
       </div>
 
       {/* Scope */}
-      <div className="w-full text-left mt-10 px-6">
-        <h3 className="text-[30px] font-semibold text-text-1 mb-2">
+      <div className="w-full text-left mt-10 ">
+        <h3 className="text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px]  font-semibold text-text-1 mb-2">
           Scope Of Product
         </h3>
-        <p className="text-text-2 text-[16px] leading-relaxed mb-6">{product.scope.heading}</p>
+        <p className="text-text-2 text-[14px] lg:text-[16px] leading-relaxed mb-6">{product.scope.heading}</p>
         <div className="grid md:grid-cols-3 gap-8 mt-3">
           {product.scope.points.map((point, idx) => (
             <div key={idx}>
               <div className="flex items-center gap-2 mb-2">
                 <CheckCircle className="text-green-500 w-5 h-5" />
-                <span className="font-semibold text-text-1 text-[20px]">
+                <span className="font-semibold text-text-1 text-[16px] md:text-[16px] lg:text-[20px]">
                   {point.title}
                 </span>
               </div>
-              <p className="text-text-2 text-[14px] leading-relaxed">{point.description}</p>
+              <p className="text-text-2 text-[12px] lg:text-[14px] leading-relaxed">{point.description}</p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Result */}
-      <div className="w-full text-left mt-10 px-6">
-        <h3 className="text-[30px] font-semibold text-text-1 mb-2">
+      <div className="w-full text-left mt-10 ">
+        <h3 className="text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px]  font-semibold text-text-1 mb-2">
           The Result Of Product
         </h3>
-        <p className="text-text-2 text-[16px] leading-relaxed mb-6">
+        <p className="text-text-2 text-[14px] lg:text-[16px] leading-relaxed mb-6">
           {product.result.description}
         </p>
         <div className="grid md:grid-cols-2 gap-6">
@@ -83,7 +83,7 @@ const Details = ({ product }) => {
       </div>
 
       {/* Prev / Next */}
-      <div className="w-full mx-auto mt-10 px-6 flex items-center justify-between ">
+      <div className="w-full mx-auto mt-10 flex items-center justify-between ">
         {prevProduct && (
           <Link
             to={`/product-details/${prevProduct.id}`}
@@ -95,8 +95,8 @@ const Details = ({ product }) => {
               className="w-14 h-14 rounded-full"
             />
             <div className="text-left">
-           <div className="text-text-1 font-semibold text-[22px]"> Previous:</div>
-           <div className="text-text-2  text-[16px]"> {prevProduct.title}</div>
+           <div className="text-text-1 font-semibold text-[16px] md:text-[16px] lg:text-[20px]"> Previous:</div>
+           <div className="text-text-2  text-[14px] lg:text-[16px]"> {prevProduct.title}</div>
             </div>
            
           </Link>
@@ -107,8 +107,8 @@ const Details = ({ product }) => {
             className="flex items-center gap-2"
           >
               <div className="text-right">
-           <div className="text-text-1 font-semibold text-[22px]"> Next: </div>
-           <div className="text-text-2  text-[16px]"> {nextProduct.title}</div>
+           <div className="text-text-1 font-semibold text-[16px] md:text-[16px] lg:text-[20px]"> Next: </div>
+           <div className="text-text-2  text-[14px] lg:text-[16px]"> {nextProduct.title}</div>
             </div>
             
             <img
