@@ -13,8 +13,8 @@ const Banner = ({  heading, description }) => {
 
       {/* Content */}
       <div className="relative text-center text-white px-4 max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">{heading}</h2>
-        <p className="text-sm md:text-base">{description}</p>
+        <h2 className="text-[36px] md:text-[48px] lg:text-[64px] font-bold mb-3">{heading}</h2>
+        <p className="text-[14px] md:text-[16px]">{description}</p>
       </div>
     </section>
   );

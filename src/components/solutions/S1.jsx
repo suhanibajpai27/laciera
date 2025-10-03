@@ -32,7 +32,7 @@ const serviceCardsData = [
 
 // Helper component for the individual card
 const ServiceCard = ({ iconUrl, title, description, link }) => (
-  <div className="bg-white p-6 sm:p-8 rounded-sm shadow-md hover:shadow-md transition duration-300 transform hover:-translate-y-1 border border-gray-100 h-full">
+  <div className="bg-white p-6 sm:p-8 rounded-sm shadow-sm hover:shadow-md transition duration-300 transform hover:-translate-y-1 border border-gray-100 h-full">
     {/* Icon/Image Placeholder */}
     <div className="mb-2">
       <img
@@ -45,13 +45,13 @@ const ServiceCard = ({ iconUrl, title, description, link }) => (
     </div>
 
     {/* Title */}
-    <h3 className="text-[20px] font-bold text-text-1 mb-2 text-left">{title}</h3>
+    <h3 className="text-[16px] md:text-[16px] lg:text-[20px] font-bold text-text-1 mb-2 text-left">{title}</h3>
 
     {/* Description */}
-    <p className="text-text-2 text-[16px] mb-3 leading-relaxed text-left grow">{description}</p>
+    <p className="text-text-2 text-[14px] lg:text-[16px] mb-3 leading-relaxed text-left grow">{description}</p>
 
     {/* Read More Link */}
-    <Link to={link} className="flex items-center text-[16px] font-semibold text-text-1 hover:text-teal-600 transition duration-150 group">
+    <Link to={link} className="flex items-center text-[14px]lg:text-[16px] font-semibold text-text-1 hover:text-teal-600 transition duration-150 group">
       Read More
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -76,17 +76,17 @@ const S1 = () => {
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16">
           {/* Label */}
-          <h2 className="text-[16px] font-medium uppercase  text-orange-1 uppercase mb-2">
+          <h2 className="text-[14px] lg:text-[16px] font-medium uppercase  text-orange-1 uppercase mb-2">
             SERVICES WE OFFER
           </h2>
           {/* Headline */}
-          <h1 className="text-[40px]  font-bold text-text-1  max-w-3xl mx-auto leading-tight">
+          <h1 className="text-[24px] md:text-[32px] lg:text-[40px]  font-bold text-text-1  max-w-3xl mx-auto leading-tight">
             Provide Comprehensive Ecological Service
           </h1>
         </div>
 
         {/* Cards Section - Responsive Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 max-w-7xl mx-auto">
           {serviceCardsData.map((card) => (
             <ServiceCard
               key={card.id}

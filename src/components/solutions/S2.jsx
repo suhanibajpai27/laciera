@@ -54,8 +54,8 @@ const SolutionCard = ({ solution }) => {
   
   {/* Left Side Content */}
   <div className="flex-1 py-3 px-4 flex flex-col justify-center text-left">
-    <p className="text-[16px] text-primary-2 font-medium ">{solution.category}</p>
-    <h3 className="text-[20px] font-bold text-text-1 leading-tight">{solution.title}</h3>
+    <p className="text-[14px] lg:text-[16px] text-primary-2 font-medium ">{solution.category}</p>
+    <h3 className="text-[16px] md:text-[16px] lg:text-[20px] font-bold text-text-1 leading-tight">{solution.title}</h3>
   </div>
 
   {/* Right Side - Arrow Button */}
@@ -79,23 +79,23 @@ const SolutionCard = ({ solution }) => {
 
 const S2 = () => {
   return (
-    <section className="w-full py-20 px-6 lg:px-20">
+    <section className="w-full py-10 md:py-20 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16">
           {/* Label */}
-          <h2 className="text-[16px] font-medium uppercase text-orange-1 mb-2">
+          <h2 className="text-[14px] lg:text-[16px]font-medium uppercase text-orange-1 mb-2">
             SERVICES WE OFFER
           </h2>
           {/* Headline - Matches the text in the image */}
-          <h1 className="text-[40px]  font-bold text-text-1  max-w-3xl mx-auto leading-tight">
+          <h1 className="text-[24px] md:text-[32px] lg:text-[40px]  font-bold text-text-1  max-w-3xl mx-auto leading-tight">
             Smart Devices & Integration
           </h1>
         </div>
         
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {solutions.map((solution) => (
             <SolutionCard key={solution.id} solution={solution} />
           ))}

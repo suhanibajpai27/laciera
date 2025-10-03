@@ -45,10 +45,10 @@ const ServiceCard = ({ iconUrl, title, description, link }) => (
     </div>
 
     {/* Title */}
-    <h3 className="text-[20px] font-bold text-text-1 mb-2 text-left">{title}</h3>
+    <h3 className="text-[16px] md:text-[16px] lg:text-[20px] font-bold text-text-1 mb-2 text-left">{title}</h3>
 
     {/* Description */}
-    <p className="text-text-2 text-[16px] mb-3 leading-relaxed text-left grow">{description}</p>
+    <p className="text-text-2 text-[14px] lg:text-[16px] mb-3 leading-relaxed text-left grow">{description}</p>
 
     {/* Read More Link */}
     <Link to={link} className="flex items-center text-[16px] font-semibold text-text-1 hover:text-teal-600 transition duration-150 group">
@@ -70,23 +70,23 @@ const ServiceCard = ({ iconUrl, title, description, link }) => (
 // Main S1 Component
 const S3 = () => {
   return (
-    <div className="py-16 px-6 lg:px-20 bg-white ">
+    <div className="py-10 md:py-20 px-6 lg:px-20 bg-white ">
       <div className="mx-auto w-full">
 
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16">
           {/* Label */}
-          <h2 className="text-[16px] font-medium uppercase  text-orange-1 uppercase mb-2">
+          <h2 className="text-[14px] lg:text-[16px] font-medium uppercase  text-orange-1 uppercase mb-2">
             SERVICES WE OFFER
           </h2>
           {/* Headline */}
-          <h1 className="text-[40px]  font-bold text-text-1  max-w-3xl mx-auto leading-tight">
+          <h1 className="text-[24px] md:text-[32px] lg:text-[40px]  font-bold text-text-1  max-w-3xl mx-auto leading-tight">
           Smart Devices & Integration
           </h1>
         </div>
 
         {/* Cards Section - Responsive Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 max-w-7xl mx-auto">
           {serviceCardsData.map((card) => (
             <ServiceCard
               key={card.id}
