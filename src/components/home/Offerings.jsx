@@ -56,7 +56,7 @@ const Offerings = () => {
         {offerings.map((item) => (
           <div
             key={item.id}
-            className="bg-secondary  border border-white/50 p-6 rounded-sm shadow-md text-center hover:shadow-lg transition mt-4"
+            className="bg-secondary/30  border border-white/20 p-6 rounded-sm shadow-sm text-center hover:shadow-md transition mt-4"
           >
             <div className="flex justify-center items-center bg-white rounded-full w-20 h-20 mx-auto mb-4 -mt-15">
               <img src={item.image} alt={item.title} className="w-20 h-20" />
