@@ -15,7 +15,7 @@ export default function About() {
     <section className="relative w-full pt-20 bg-white m-0 p-0">
       <div className=" mx-auto ">
 
-        <div className="px-6 lg:px-12">
+        <div className="px-6 lg:px-20  mx-auto">
  {/* Top Heading */}
  <div className="text-center  mx-auto ">
           <p className=" font-medium text-[14px] md:text-[14px] lg:text-[16px] tracking-wide text-orange-1 uppercase">
@@ -27,9 +27,9 @@ export default function About() {
         </div>
 
         {/* Feature Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl lg:mx-auto">
           {/* Card 1 */}
-          <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start text-left hover:shadow-xl transition overflow-hidden">
+          <div className="relative bg-white shadow-sm rounded-sm p-6 flex flex-col items-start text-left hover:shadow-md transition overflow-hidden">
   {/* Background shape in top-right */}
   <div className="absolute top-0 right-0 w-3/4   overflow-hidden">
     <img
@@ -61,7 +61,7 @@ export default function About() {
 
 
           {/* Card 2 */}
-          <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start text-left hover:shadow-xl transition overflow-hidden">
+          <div className="relative bg-white shadow-sm rounded-sm p-6 flex flex-col items-start text-left hover:shadow-md transition overflow-hidden">
   {/* Background shape in top-right */}
   <div className="absolute top-0 right-0 w-3/4   overflow-hidden">
     <img
@@ -91,7 +91,7 @@ export default function About() {
 
 
           {/* Card 3 */}
-          <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start text-left hover:shadow-xl transition overflow-hidden">
+          <div className="relative bg-white shadow-sm rounded-sm p-6 flex flex-col items-start text-left hover:shadow-md transition overflow-hidden">
   {/* Background shape in top-right */}
   <div className="absolute top-0 right-0 w-3/4   overflow-hidden">
     <img
@@ -141,7 +141,7 @@ export default function About() {
           </div>
 
           {/* Right Content */}
-          <div className="text-left md:text-left lg:text-left w-full sm:max-w-full md:max-w-md lg:max-w-lg sm:px-6" >
+          <div className="text-left md:text-left lg:text-left w-full sm:max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl sm:px-6" >
             <p className="text-[14px] lg:text-[16px] font-medium tracking-wide text-orange-1 uppercase">
               About Us
             </p>

@@ -6,8 +6,8 @@ import cta3 from "../../assets/images/cta3.svg";
 
 const CTA = () => {
   return (
-    <section className="bg-bg-2 text-white py-20 px-6 lg:px-20">
-      <div className=" mx-auto">
+    <section className="bg-bg-2 text-white py-20 px-6 lg:px-20 ">
+      <div className=" mx-auto max-w-7xl lg:mx-auto">
         {/* Top Section: Left Text + Right 3 Columns */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
           {/* Left: Heading */}

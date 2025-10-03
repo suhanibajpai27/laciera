@@ -16,7 +16,7 @@ export default function Footer() {
       {/* Top contact section */}
       <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left   ">
         {/* Phone */}
-        <div className="flex flex-row gap-4 items-center lg:items-start mx-auto">
+        <div className="flex flex-row gap-4 items-center lg:items-start mx-auto lg:m-0">
          
           <img src={phone} className="text-2xl mb-2 border-[3px] border-primary-2 border-dotted rounded-full p-2"  style={{borderStyle: "dotted"}}/>
           
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         {/* Email */}
-        <div className="flex flex-row gap-4 items-center lg:items-start  mx-auto ">
+        <div className="flex flex-row gap-4 items-center lg:items-start  mx-auto lg:m-0">
           <img src={envelope} className="text-2xl mb-2 border-[3px] border-primary-2 border-dotted rounded-full p-2"  style={{borderStyle: "dotted"}}/>
           <div>
           <p className="text-[14px] lg:text-[16px] font-regular">Make a Quote</p>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         {/* Location */}
-        <div className="flex flex-row gap-4 items-center lg:items-start  mx-auto ">
+        <div className="flex flex-row gap-4 items-center lg:items-start  mx-auto lg:m-0">
           <img src={map} className="text-2xl mb-2 border-[3px] border-primary-2 border-dotted rounded-full p-2"  style={{borderStyle: "dotted"}}/>
           <div>
           <p className="text-[14px] lg:text-[16px] font-regular">Location</p>
@@ -75,10 +75,10 @@ export default function Footer() {
             Cut costs, increase returns, and maintain comfort while accelerating the energy transition.
           </p>
           <div className="flex space-x-3 justify-center md:justify-start ">
-            <a href="#" ><img src={fb} lassName="text-xl hover:text-gray-200 " style={{ color: "#FFF", border: "1px solid white",  padding:"10px" }} /></a>
-            <a href="#" style={{ color: "#FFF", border: "1px solid white",  padding:"10px" }}><img src={x} lassName="text-xl hover:text-gray-200"/></a>
-            <a href="#" style={{ color: "#FFF", border: "1px solid white",  padding:"10px" }}><img src={li} lassName="text-xl hover:text-gray-200"/></a>
-            <a href="#" style={{ color: "#FFF", border: "1px solid white",  padding:"10px" }}><img src={yt} lassName="text-xl hover:text-gray-200"/></a>
+            <a href="#"  className=" border border-white/50"><img src={fb} className="text-xl hover:text-gray-200  " style={{ color: "#FFF", padding:"10px" }} /></a>
+            <a href="#" className=" border border-white/50" style={{ color: "#FFF",   padding:"10px" }}><img src={x} lassName="text-xl hover:text-gray-200"/></a>
+            <a href="#"  className=" border border-white/50"style={{ color: "#FFF",   padding:"10px" }}><img src={li} lassName="text-xl hover:text-gray-200"/></a>
+            <a href="#" className=" border border-white/50" style={{ color: "#FFF",  padding:"10px" }}><img src={yt} lassName="text-xl hover:text-gray-200"/></a>
           </div>
         </div>
 

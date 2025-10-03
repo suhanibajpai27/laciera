@@ -46,7 +46,7 @@ const Works = () => {
       </div>
 
       {/* Works cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-7xl lg:mx-auto">
         {works.map((item, idx) => (
           <div
             key={idx}
