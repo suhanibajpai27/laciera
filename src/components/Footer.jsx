@@ -7,20 +7,23 @@ import yt from "../assets/icons/ytw.svg";
 import phone from "../assets/icons/phone.svg";
 import map from "../assets/icons/map.svg";
 import envelope from "../assets/icons/envelope.svg";
-import logo from "../assets/icons/logo.svg";
+import logo from "../assets/icons/logo.png";
 
 export default function Footer() {
   return (
     <footer>
     <div className="bg-bg text-white px-6 lg:px-20">
       {/* Top contact section */}
-      <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left ">
+      <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left   ">
         {/* Phone */}
-        <div className="flex flex-row gap-4 items-center md:items-start ">
+        <div className="flex flex-row gap-4 items-center lg:items-start mx-auto">
+         
           <img src={phone} className="text-2xl mb-2 border-[3px] border-primary-2 border-dotted rounded-full p-2"  style={{borderStyle: "dotted"}}/>
+          
+         
           <div>
-          <p className="text-[16px] font-regular">Call Us 7/24</p>
-          <a href="tel:+2085550112" className="font-semibold text-[20px]">
+          <p className="text-[14px] lg:text-[16px] font-regular">Call Us 7/24</p>
+          <a href="tel:+2085550112" className="font-semibold text-[16px] md:text-[16px] lg:text-[20px]">
             +208-555-0112
           </a>
           </div>
@@ -28,11 +31,11 @@ export default function Footer() {
         </div>
 
         {/* Email */}
-        <div className="flex flex-row gap-4 items-center md:items-start">
+        <div className="flex flex-row gap-4 items-center lg:items-start  mx-auto ">
           <img src={envelope} className="text-2xl mb-2 border-[3px] border-primary-2 border-dotted rounded-full p-2"  style={{borderStyle: "dotted"}}/>
           <div>
-          <p className="text-[16px] font-regular">Make a Quote</p>
-          <a href="tel:+2085550112" className="font-semibold text-[20px]">
+          <p className="text-[14px] lg:text-[16px] font-regular">Make a Quote</p>
+          <a href="tel:+2085550112" className="font-semibold text-[16px] md:text-[16px] lg:text-[20px]">
           suppoert@laciera.in
           </a>
           </div>
@@ -40,11 +43,11 @@ export default function Footer() {
         </div>
 
         {/* Location */}
-        <div className="flex flex-row gap-4 items-center md:items-start">
+        <div className="flex flex-row gap-4 items-center lg:items-start  mx-auto ">
           <img src={map} className="text-2xl mb-2 border-[3px] border-primary-2 border-dotted rounded-full p-2"  style={{borderStyle: "dotted"}}/>
           <div>
-          <p className="text-[16px] font-regular">Location</p>
-          <a href="tel:+2085550112" className="font-semibold text-[20px]">
+          <p className="text-[14px] lg:text-[16px] font-regular">Location</p>
+          <a href="tel:+2085550112" className="font-semibold text-[16px] md:text-[16px] lg:text-[20px]">
           4517 Washington ave.
           </a>
           </div>
@@ -59,15 +62,15 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-24 text-center md:text-left">
         {/* Logo + Description */}
         <div>
-          <div className="flex items-center justify-start md:justify-start mb-4">
+          <div className="flex items-center justify-center lg:justify-start mb-4">
             <img
               src={logo}
               alt="Laciera Logo"
               className="w-12 h-12"
             />
-            <span className="ml-3 font-semibold text-[24px]">LACIERA</span>
+            <span className="ml-3 font-semibold text-[16px] md:text-[20px] lg:text-[24px]">LACIERA</span>
           </div>
-          <p className="text-[16px] leading-tight font-light mb-4">
+          <p className="text-[14px]  lg:text-[16px] leading-tight font-light mb-4">
             One platform for insight, optimization, and energy trading.
             Cut costs, increase returns, and maintain comfort while accelerating the energy transition.
           </p>

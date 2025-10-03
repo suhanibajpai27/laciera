@@ -32,13 +32,13 @@ const Works = () => {
     }}>
       {/* Section header */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <p className="text-[16px] font-medium text-orange-1 uppercase tracking-wide">
+        <p className="text-[14px] text-[16px] font-medium text-orange-1 uppercase tracking-wide">
           How It Works
         </p>
-        <h2 className="text-[40px] sm:text-3xl  font-bold text-text-1 mt-2">
+        <h2 className="text-[24px] md:text-[32px] lg:text-[40px]  font-bold text-text-1 mt-2 leading-tight">
           How Laciera Is The Right<br/> Platform For You
         </h2>
-        <p className="mt-4 text-text-2 max-w-lg mx-auto text-[16px] sm:text-base">
+        <p className="mt-4 text-text-2 max-w-lg mx-auto text-[14px] lg:text-[16px] ">
           Our platform seamlessly integrates with your existing infrastructure
           to deliver intelligent energy management through a simple three–step
           process.
@@ -46,11 +46,11 @@ const Works = () => {
       </div>
 
       {/* Works cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {works.map((item, idx) => (
           <div
             key={idx}
-            className="relative rounded-sm overflow-hidden shadow-md group"
+            className="relative rounded-sm overflow-hidden shadow-md group "
           >
             {/* Background image */}
             <img
@@ -60,9 +60,12 @@ const Works = () => {
             />
 
             {/* Overlay card */}
-            <div className="absolute bottom-4 left-4 right-4 bg-white rounded-sm p-4 shadow text-left">
-              <h3 className="font-bold text-text-1 text-[20px]">{item.title}</h3>
-              <p className=" text-text-2 mt-2 text-[16px]">{item.desc}</p>
+            <div className="absolute bottom-4 left-4 right-4 bg-white rounded-sm p-4 shadow text-left ">
+              
+              <h3 className="font-bold text-text-1 text-[16px] md:text-[16px] lg:text-[20px]">{item.title}</h3>
+              <p className=" text-text-2 mt-2 text-[14px] lgLtext-[16px]">{item.desc}</p>
+              
+             
             </div>
           </div>
         ))}
